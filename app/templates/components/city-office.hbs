@@ -1,0 +1,43 @@
+<div class="city-office" data-search-data={{name}}>
+  <div class="image-container">
+    <img src="assets/images/city-{{name}}.jpg" alt={{address.label}}>
+  </div>
+  <h2 class="city-name">
+    {{~address.label~}}
+  </h2>
+  <div class="info-line">
+    {{~address.street1~}}
+  </div>
+  {{~#if address.street2~}}
+    <div class="info-line">
+      {{~address.street2~}}
+    </div>
+  {{~/if~}}
+  {{~#if address.street3~}}
+    <div class="info-line">
+      {{~address.street3~}}
+    </div>
+  {{~/if~}}
+  <div class="info-line">
+    {{~address.city~}}
+  </div>
+  {{~#if address.country~}}
+    <div class="info-line">
+      {{~address.country~}}
+    </div>
+  {{~/if~}}
+  {{~#if address.tel1~}}
+    <div class="info-line">
+      {{~address.tel1~}}
+    </div>
+  {{~/if~}}
+  {{~#if address.tel2~}}
+    <div class="info-line">
+      {{~address.tel2~}}
+    </div>
+  {{~/if~}}
+  <a class="map-link" href={{address.mapUrl}} target="_blank"></a>
+  <div class="local-time tz-{{name}}">
+    {{~clockCharacter~}}
+  </div>
+</div>

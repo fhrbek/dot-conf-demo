@@ -1,0 +1,116 @@
+@font-face {font-family: 'Zycon'; src:url('fonts/Zycon.ttf');}
+
+:root {
+  --text-color: #222;
+  --background-color: transparent;
+  --clock-display: none;
+}
+
+body {
+  font-family: "Helvetica";
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+input::placeholder {
+  font-style: italic;
+  color: #bbb;
+}
+
+.responsive-container {
+  display: grid;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  grid-template-rows: auto;
+}
+
+.responsive-container-header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.accessibility-info {
+  height: 3em;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  cursor: help;
+}
+
+.city-office {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.image-container {
+
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.city-name {
+  font-size: 1.5em;
+}
+
+.info-line {
+  padding-bottom: 0.5em;
+}
+
+.map-link {
+  display: inline-block;
+  padding: 0.8em 2.5em;
+  margin-top: 1.5em;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.map-link::before {
+  content: 'View map';
+}
+
+.local-time {
+  font-family: Zycon;
+  font-size: 4em;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: var(--clock-display);
+}
+
+.local-time.tz-portland {
+  font-variation-settings: 'M1  ' var(--portland-time);
+}
+
+.local-time.tz-london {
+  font-variation-settings: 'M1  ' var(--london-time);
+}
+
+.local-time.tz-sydney {
+  font-variation-settings: 'M1  ' var(--sydney-time);
+}
+
+.local-time.tz-belfast {
+  font-variation-settings: 'M1  ' var(--belfast-time);
+}
+
+.local-time.tz-plzen {
+  font-variation-settings: 'M1  ' var(--plzen-time);
+}
+
+.local-time.tz-singapore {
+  font-variation-settings: 'M1  ' var(--singapore-time);
+}
+
+.local-time.tz-seattle {
+  font-variation-settings: 'M1  ' var(--seattle-time);
+}
+
+.local-time.tz-tokyo {
+  font-variation-settings: 'M1  ' var(--tokyo-time);
+}

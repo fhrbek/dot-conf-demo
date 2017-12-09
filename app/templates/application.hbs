@@ -1,0 +1,96 @@
+<div class="responsive-container" id="searchableContainer" data-search-term="">
+  <div class="responsive-container-header">
+    <h1>
+      Puppet offices
+    </h1>
+    <div>
+      {{~background-color-picker~}}
+    </div>
+    <input id="css-search" type="text" placeholder="filter by name"
+           oninput="document.getElementById('searchableContainer').setAttribute('data-search-term', this.value.toLowerCase())">
+    <img class="accessibility-info" src="assets/images/accessibility.svg" alt="accessibility information"
+         title="Make sure your site is accessible! Test with https://axe-core.org">
+  </div>
+
+  {{~city-office
+     name="portland"
+     address=(hash label="Portland"
+                   street1="308 SW 2nd Ave. Fifth Floor"
+                   city="Portland, OR 97204"
+                   country="United States"
+                   tel1="877-575-9775"
+                   tel2="+1-503-575-9775"
+                   mapUrl="https://goo.gl/maps/fZ9CXxqkLZM2")
+  ~}}
+
+  {{~city-office
+     name="london"
+     address=(hash label="London"
+                   street1="Aldgate Tower"
+                   street2="2 Leman Street"
+                   city="London E1 8FA"
+                   country="United Kingdom"
+                   tel1="+44-203-751-7676"
+                   mapUrl="https://goo.gl/maps/U1U6CfDEdzm")
+  ~}}
+
+  {{~city-office
+     name="sydney"
+     address=(hash label="Sydney"
+                   street1="1 / 309 George Street"
+                   city="Sydney, NSW 2000"
+                   country="Australia"
+                   tel1="+61 (2) 80743134"
+                   mapUrl="https://goo.gl/maps/Tjz7fKN27Bu")
+  ~}}
+
+  {{~city-office
+     name="belfast"
+     address=(hash label="Belfast"
+                   street1="4th Floor, 40 Linenhall Street"
+                   city="Belfast"
+                   country="BT2 8BA"
+                   tel1="+44 (0)28 9590 3130"
+                   mapUrl="https://goo.gl/maps/B3CuM3ufVJK2")
+  ~}}
+
+  {{~city-office
+     name="plzen"
+     address=(hash label="Plzeň"
+                   street1="Denisovo nábřeží 6"
+                   city="Plzeň"
+                   country="Czech Republic"
+                   mapUrl="https://goo.gl/maps/VgPDjhndnrv")
+  ~}}
+
+  {{~city-office
+     name="singapore"
+     address=(hash label="Singapore"
+                   street1="140 Robinson Rd"
+                   street2="Suite 18-02"
+                   city="Singapore 068907"
+                   tel1="+65-6631-8450"
+                   mapUrl="https://goo.gl/maps/BVznzhwHbVo")
+  ~}}
+
+  {{~city-office
+     name="seattle"
+     address=(hash label="Seattle"
+                   street1="2101 Fourth Avenue"
+                   street2="Suite 320"
+                   city="Seattle, WA 98121"
+                   mapUrl="https://goo.gl/maps/d8bJccBfXMn")
+  ~}}
+
+  {{~city-office
+     name="tokyo"
+     address=(hash label="Tokyo"
+                   street1="7th floor"
+                   street2="Sumitomo Corporation"
+                   street3="JINBOCHOBLDG., 2-11-15"
+                   city="Kanda-jinbocho, Chiyoda-ku, Tokyo 101-0051"
+                   country="Japan"
+                   mapUrl="https://goo.gl/maps/rXEsXDPmiBx")
+  ~}}
+
+</div>

@@ -1,0 +1,23 @@
+.color-picker {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.color-picker-button {
+  border: 1px solid #ccc;
+  height: 2em;
+  width: 2em;
+  margin-left: 0.2em;
+  cursor: pointer;
+
+  &:first-of-type {
+    background-color: #fff;
+    margin-left: 0;
+   }
+
+  &:nth-of-type(2) {
+    background-color: #bbb;
+  }
+}
